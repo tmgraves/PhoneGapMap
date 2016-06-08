@@ -63,6 +63,9 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.phonegap.map"
+        },
+        "cordova-plugin-googlemaps": {
+            "PACKAGE_NAME": "com.phonegap.map"
         }
     },
     "dependent_plugins": {

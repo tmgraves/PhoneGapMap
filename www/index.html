@@ -7,10 +7,19 @@
     <script type="text/javascript">
     var map;
     document.addEventListener("deviceready", function() {
-      var div = document.getElementById("map_canvas");
+        alert("device ready listener");
+        var div = document.getElementById("map_canvas");
 
-      // Initialize the map view
-      map = plugin.google.maps.Map.getMap(div);
+        alert("build the map");
+        // Initialize the map view
+        try{
+            map = plugin.google.maps.Map.getMap(div);
+        }
+        catch(err)
+        {
+            alert(err.message);
+        }
+      alert("map built");
 
       // Wait until the map is ready status.
       map.addEventListener(plugin.google.maps.event.MAP_READY, onMapReady);
